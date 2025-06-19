@@ -329,10 +329,6 @@ pre.w-code-block code {
   all: inherit;
 }
 
-.w-optimization {intro-title 
-  display: contents;
-}
-
 .w-webflow-badge,
 .w-webflow-badge > img {
   display: none;
@@ -3338,6 +3334,14 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+}
+
+.new {
+  font-family:
+    Mango Grotesque,
+    Impact,
+    sans-serif;
+  font-size: 6rem;
 }
 
 h1 {
