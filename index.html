@@ -203,30 +203,7 @@
               src="/images/video-lancamento-pronto_pDz08EuC (1).mp4"
               type="video/mp4"
             />
-          </video>
-          <script>
-            window.addEventListener("load", function () {
-              const video = document.getElementById("meuVideo");
-
-              const clickEvent = new MouseEvent("click", {
-                bubbles: true,
-                cancelable: true,
-                view: window,
-              });
-
-              // Dispara o clique
-              document.body.dispatchEvent(clickEvent);
-
-              // Opcional: se quiser forçar o play também
-              video.play().catch((err) => {
-                console.warn("Não foi possível dar play automaticamente:", err);
-              });
-            });
-          </script>
-
-         
-            
-           
+          </video> 
           <div
             id="w-node-_0500aca7-7364-6e7a-e315-bfed541284fe-b697c240"
             class="heading-wrapper text-center pt-[60%] sm:pt-[20%] h-40 w-[40]"
