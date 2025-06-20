@@ -29,17 +29,6 @@
             (n.className += t + "touch");
       })(window, document);
     </script>
-    <script>
-      window.addEventListener("load", function () {
-        const clickEvent = new MouseEvent("click", {
-          bubbles: true,
-          cancelable: true,
-          view: window,
-        });
-
-        document.body.dispatchEvent(clickEvent);
-      });
-    </script>
     <link rel="shortcut icon" type="image/x-icon" href="images/Voin/Voian-Simbolo.ico" /> 
      
   </head>
@@ -203,38 +192,36 @@
         <header
           class="section-home-header flex items-center justify-center min-h-screen relative"
         >
-          <div 
+          <div
+            autoplay muted loop playsinline
             class="absolute inset-0 w-full h-full object-cover sm:h-[100vh]  "
           >
-            <iframe src="https://drive.google.com/file/d/1aa7rWtV_9MzXDtByU5xkPwnTiLStmPc1/view?usp=drive_link"
-        width="100%" height="100%" allow="autoplay" allowfullscreen
-        class="w-[150%] h-[150%] absolute -top-50">
-</iframe>
-<video id="meuVideo" autoplay muted playsinline>
-  <source src="seu-video.mp4" type="video/mp4">
-  Seu navegador não suporta vídeo HTML5.
-</video>
+            <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/5mpi3k?autoplay=1" width="100%"   class="w-[150%]  h-[150%] absolute -top-50">
 
-<script>
-  window.addEventListener("load", function () {
-    const video = document.getElementById("meuVideo");
+            </iframe>
+          </div> 
+          <script>
+            window.addEventListener("load", function () {
+              const video = document.getElementById("meuVideo");
 
-    const clickEvent = new MouseEvent("click", {
-      bubbles: true,
-      cancelable: true,
-      view: window,
-    });
+              const clickEvent = new MouseEvent("click", {
+                bubbles: true,
+                cancelable: true,
+                view: window,
+              });
 
-    // Dispara o clique
-    document.body.dispatchEvent(clickEvent);
+              // Dispara o clique
+              document.body.dispatchEvent(clickEvent);
 
-    // Opcional: se quiser forçar o play também
-    video.play().catch((err) => {
-      console.warn("Não foi possível dar play automaticamente:", err);
-    });
-  });
-</script>
-          </div>  
+              // Opcional: se quiser forçar o play também
+              video.play().catch((err) => {
+                console.warn("Não foi possível dar play automaticamente:", err);
+              });
+            });
+          </script>
+
+         
+            
            
           <div
             id="w-node-_0500aca7-7364-6e7a-e315-bfed541284fe-b697c240"
