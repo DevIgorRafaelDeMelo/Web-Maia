@@ -192,14 +192,18 @@
         <header
           class="section-home-header flex items-center justify-center min-h-screen relative"
         >
-          <div
-            autoplay muted loop playsinline
-            class="absolute inset-0 w-full h-full object-cover sm:h-[100vh]  "
+         <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover sm:h-[100vh]"
           >
-            <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/5mpi3k?autoplay=1" width="100%"   class="w-[150%]  h-[150%] absolute -top-50">
-
-            </iframe>
-          </div> 
+            <source
+              src="/images/video-lancamento-pronto_pDz08EuC (1).mp4"
+              type="video/mp4"
+            />
+          </video>
           <script>
             window.addEventListener("load", function () {
               const video = document.getElementById("meuVideo");
