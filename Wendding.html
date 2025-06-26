@@ -15,10 +15,69 @@
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
       href="css/boldmark.webflow.6428ad051.css"
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      body {
+        background-color: #121212;
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top: 30px;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .tab {
+        background-color: #2c2c2c;
+        color: #bbb;
+        padding: 12px 24px;
+        margin: 0 5px;
+        border: 1px solid #444;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .tab:hover {
+        background-color: #3a3a3a;
+        color: #fff;
+      }
+
+      .tab.active {
+        background-color: #1e1e1e;
+        font-weight: bold;
+        border-bottom: 2px solid #e01001;
+      }
+
+      .content {
+        display: none;
+        padding: 10px;
+      }
+
+      .video-section p {
+        font-family: "Great Vibes", cursive;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-weight: normal;
+      }
+
+      .content.active {
+        display: block;
+      }
+    </style>
+
     <script type="text/javascript">
       !(function (o, c) {
         var n = c.documentElement,
@@ -36,7 +95,6 @@
     />
   </head>
   <body>
-     
     <div class="page-wrapper">
       <div
         id="top"
@@ -157,7 +215,7 @@
                           </div></div
                       ></a>
                     </div>
-                     <div class="nav-link-overflow">
+                    <div class="nav-link-overflow">
                       <a
                         data-w-id="b80e4bcc-650d-950d-9821-7930fbb222bc"
                         href="https://wa.me/5551999509578?text=Ol%C3%A1%20Voian%2C%20Estou%20interessado%20em%20fazer%20um%20or%C3%A7amento."
@@ -174,7 +232,6 @@
                             <div class="right-underline"></div>
                           </div></div
                       ></a>
- 
                     </div>
                   </div>
                 </div>
@@ -247,94 +304,176 @@
             </div>
           </div>
         </header>
-        <section class="bg-neutral-900 p-4 text-center">
-          <section
-            class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
-          >
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/_HAP0701.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/_HAP0696.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/DMSP9373.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-          </section>
 
-          <section
-            class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
-          >
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-top"
-              src="images/Wendding/_HAP0778.jpg"
-              alt="about section"
-              loading="lazy"
-            /><img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
-              src="images/Wendding/_HAP0722.jpg"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
-              src="images/Wendding/_HAP0780.jpg"
-            />
-          </section>
+        <div class="tabs">
+          <div class="tab active" onclick="showTab('video')">Vídeo</div>
+          <div class="tab" onclick="showTab('imagem')">Imagem</div>
+        </div>
 
-          <section
-            class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
+        <div id="video" class="content active">
+          <div
+            class="sm:w-[70%] text-center h-[20vh] sm:h-[80vh] mb-40 m-auto p-2 video-section"
           >
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/_HAP0784.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/_HAP1175.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
-              src="images/Wendding/DMSP8506.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-          </section>
+            <p
+              class="text-white text-xl sm:text-2xl font-semibold tracking-wide mb-4"
+            >
+              Cris & Miriã
+            </p>
+            <video autoplay muted loop playsinline>
+              <source
+                src="images/Wendding/PRÉ WENDING MIRIÃ E CRIS mp4.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div
+            class="sm:w-[70%] text-center h-[20vh] sm:h-[80vh] mb-40 m-auto p-2 video-section"
+          >
+            <p
+              class="text-white text-xl sm:text-2xl font-semibold tracking-wide mb-4"
+            >
+              Leo & Ju
+            </p>
+            <video autoplay muted loop playsinline>
+              <source
+                src="images/Wendding/Leo & Ju - Best Moments.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div
+            class="sm:w-[70%] text-center h-[20vh] sm:h-[80vh] mb-40 m-auto p-2 video-section"
+          >
+            <p
+              class="text-white text-xl sm:text-2xl font-semibold tracking-wide mb-4"
+            >
+              Doglas & Jeh
+            </p>
+            <video autoplay muted loop playsinline>
+              <source
+                src="images/Wendding/Sameday Doglas & Jeh.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div
+            class="sm:w-[70%] text-center h-[20vh] sm:h-[80vh] mb-40 m-auto p-2 video-section"
+          >
+            <p
+              class="text-white text-xl sm:text-2xl font-semibold tracking-wide mb-4"
+            >
+              Dudu & Ana
+            </p>
+            <video autoplay muted loop playsinline>
+              <source
+                src="images/Wendding/Pre Wedding - Dudu & Ana.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
 
-          <section
-            class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
-          >
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
-              src="images/Wendding/DMSP9263.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
-              src="images/Wendding/DMSP9185.jpg"
-              alt="about section"
-              loading="lazy"
-            />
-            <img
-              class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
-              src="images/Wendding/DMSP9114.jpg"
-              alt="about section"
-              loading="lazy"
-            />
+        <div id="imagem" class="content">
+          <section class="bg-neutral-900 p-4 text-center">
+            <div class="video-section">
+              <p
+                class="text-white text-xl sm:text-2xl font-semibold tracking-wide mb-4 mt-8"
+              >
+                Ensaios fotográfico
+              </p>
+            </div>
+
+            <section
+              class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
+            >
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/_HAP0701.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/_HAP0696.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/DMSP9373.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+            </section>
+
+            <section
+              class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
+            >
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-top"
+                src="images/Wendding/_HAP0778.jpg"
+                alt="about section"
+                loading="lazy"
+              /><img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
+                src="images/Wendding/_HAP0722.jpg"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
+                src="images/Wendding/_HAP0780.jpg"
+              />
+            </section>
+
+            <section
+              class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
+            >
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/_HAP0784.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/_HAP1175.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover filter grayscale"
+                src="images/Wendding/DMSP8506.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+            </section>
+
+            <section
+              class="flex flex-wrap justify-center items-center gap-5 w-full px-4 py-10"
+            >
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
+                src="images/Wendding/DMSP9263.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
+                src="images/Wendding/DMSP9185.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+              <img
+                class="home-about-us-photo-1 w-full sm:w-[32%] object-cover"
+                src="images/Wendding/DMSP9114.jpg"
+                alt="about section"
+                loading="lazy"
+              />
+            </section>
           </section>
-        </section>
+        </div>
+
+        <section></section>
+
         <section>
           <div class="cta-sticky">
             <div class="cta-container">
@@ -359,17 +498,25 @@
                   <div class="max-width-xlarge align-center"></div>
                   <div class="spacer-small"></div>
                 </div>
-                 <div class="bg-green-500"  >
-                     <a href="https://wa.me/5551999509578?text=Olá%20Voian%2C%20quero%20fazer%20um%20orçamento"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 32 32">
-                          <path d="M16.003 2.003c-7.732 0-14 6.268-14 14 0 2.472.648 4.84 1.88 6.94L2 30l7.26-1.88a13.93 13.93 0 006.743 1.72h.003c7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.5a11.5 11.5 0 01-5.86-1.58l-.42-.25-4.31 1.11 1.15-4.2-.27-.43a11.47 11.47 0 01-1.77-6.1c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5zm6.29-8.62c-.34-.17-2.01-.99-2.32-1.1-.31-.11-.54-.17-.77.17s-.89 1.1-1.09 1.33c-.2.23-.4.26-.74.09-.34-.17-1.43-.53-2.72-1.7-1.01-.9-1.69-2-1.89-2.34-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.68-.57-.59-.77-.6h-.66c-.23 0-.6.09-.91.43s-1.2 1.17-1.2 2.85 1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.01-.82 2.3-1.61.28-.79.28-1.47.2-1.61-.09-.14-.31-.23-.66-.4z"/>
-                        </svg>
-                        Nós contate
-                      </a>
-                    </div>
+                <div class="bg-green-500">
+                  <a
+                    href="https://wa.me/5551999509578?text=Olá%20Voian%2C%20quero%20fazer%20um%20orçamento"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 fill-current"
+                      viewBox="0 0 32 32"
+                    >
+                      <path
+                        d="M16.003 2.003c-7.732 0-14 6.268-14 14 0 2.472.648 4.84 1.88 6.94L2 30l7.26-1.88a13.93 13.93 0 006.743 1.72h.003c7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.5a11.5 11.5 0 01-5.86-1.58l-.42-.25-4.31 1.11 1.15-4.2-.27-.43a11.47 11.47 0 01-1.77-6.1c0-6.34 5.16-11.5 11.5-11.5s11.5 5.16 11.5 11.5-5.16 11.5-11.5 11.5zm6.29-8.62c-.34-.17-2.01-.99-2.32-1.1-.31-.11-.54-.17-.77.17s-.89 1.1-1.09 1.33c-.2.23-.4.26-.74.09-.34-.17-1.43-.53-2.72-1.7-1.01-.9-1.69-2-1.89-2.34-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.68-.57-.59-.77-.6h-.66c-.23 0-.6.09-.91.43s-1.2 1.17-1.2 2.85 1.23 3.3 1.4 3.53c.17.23 2.42 3.7 5.87 5.19.82.35 1.46.56 1.96.72.82.26 1.57.22 2.16.13.66-.1 2.01-.82 2.3-1.61.28-.79.28-1.47.2-1.61-.09-.14-.31-.23-.66-.4z"
+                      />
+                    </svg>
+                    Nós contate
+                  </a>
+                </div>
               </div>
               <div class="cta-image-wrapper">
                 <img
@@ -481,6 +628,20 @@
         </div>
       </footer>
     </div>
+    <script>
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll(".content");
+
+        tabs.forEach((tab) => tab.classList.remove("active"));
+        contents.forEach((content) => content.classList.remove("active"));
+
+        document
+          .querySelector(`.tab[onclick*="${tabId}"]`)
+          .classList.add("active");
+        document.getElementById(tabId).classList.add("active");
+      }
+    </script>
 
     <script
       src="js/jquery-3.5.1.min.dc5e7f18c8.js"
